@@ -1,0 +1,8 @@
+cpp/build/
+cpp/bin/
+.venv/
+__pycache__/
+*.pyc
+output/
+output_*/
+docs/results/*.csv

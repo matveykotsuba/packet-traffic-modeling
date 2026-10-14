@@ -1,0 +1,7 @@
+Traffic model: poisson
+Packets count: 35793
+Average packet size: 801.015059 bytes
+Average bitrate: 63712.737778 bit/s
+Average delay between packets: 0.100577 s
+Delay histogram: docs/results/delay_histogram.png
+Packet size histogram: docs/results/packet_size_histogram.png
