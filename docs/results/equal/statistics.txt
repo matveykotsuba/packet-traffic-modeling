@@ -1,0 +1,7 @@
+Traffic model: equal
+Packets count: 12
+Average packet size: 1000.000000 bytes
+Average bitrate: 8727.272727 bit/s
+Average delay between packets: 1.000000 s
+Delay histogram: docs/results/equal/delay_histogram.png
+Packet size histogram: docs/results/equal/packet_size_histogram.png

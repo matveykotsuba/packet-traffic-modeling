@@ -98,7 +98,15 @@ def save_histogram(values: Sequence[float], title: str, xlabel: str, output_path
         plt.xlabel(xlabel)
         plt.ylabel("count")
     else:
-        plt.hist(values, bins="auto", edgecolor="black")
+        if min(values) == max(values):
+            value = values[0]
+            half_width = max(abs(value) * 0.02, 0.01)
+            span = max(abs(value) * 0.5, 0.5)
+            plt.hist(values, bins=[value - half_width, value + half_width], edgecolor="black")
+            plt.xlim(value - span, value + span)
+            plt.ticklabel_format(axis="x", style="plain", useOffset=False)
+        else:
+            plt.hist(values, bins="auto", edgecolor="black")
         plt.title(title)
         plt.xlabel(xlabel)
         plt.ylabel("count")
